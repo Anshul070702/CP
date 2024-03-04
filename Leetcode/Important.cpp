@@ -1,11 +1,5 @@
 #include <bits/stdc++.h>
-/*  For Ordered_Set (Policy based DS) */
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
 using namespace std;
-template <typename T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 #define godspeed                      \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);                    \
@@ -27,6 +21,7 @@ vector<vector<int>> PrefixSum(vector<vector<int>> &mat)
         PrefSum from (i1,j1) to (i2,j2) => preSum[i2][j2] - preSum[i2][j1-1] - preSum[i1-1][j2] + preSum[i1-1][j1-1]
     */
 }
+
 
 
 int main()
