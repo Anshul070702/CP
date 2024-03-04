@@ -23,7 +23,11 @@ vector<vector<int>> PrefixSum(vector<vector<int>> &mat)
             pre[i][j] = mat[i - 1][j - 1] + pre[i - 1][j] + pre[i][j - 1] - pre[i - 1][j - 1];
         }
     }
+    /*
+        PrefSum from (i1,j1) to (i2,j2) => preSum[i2][j2] - preSum[i2][j1-1] - preSum[i1-1][j2] + preSum[i1-1][j1-1]
+    */
 }
+
 
 int main()
 {
