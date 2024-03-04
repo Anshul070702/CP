@@ -6,7 +6,7 @@ using namespace __gnu_pbds;
 using namespace std;
 template <typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-// less can be changes to greater or less_equal(multiset) as per needs.
+// less can be changed to greater or less_equal(multiset) as per needs.
 #define godspeed                      \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);                    \
